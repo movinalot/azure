@@ -21,3 +21,8 @@ variable "enable_accelerated_networking" {
 variable "ip_configurations" {
   description = "Virtual Network Interface ip_configurations"
 }
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}
