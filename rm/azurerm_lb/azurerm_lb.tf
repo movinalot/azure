@@ -29,6 +29,8 @@ resource "azurerm_lb" "lb" {
       private_ip_address_version    = frontend_ip_configuration.value.private_ip_address_version
     }
   }
+
+  tags = var.tags
 }
 
 output "lb" {

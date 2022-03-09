@@ -16,3 +16,8 @@ variable "sku" {
 variable "frontend_ip_configurations" {
   description = "Load Balancer Frontend IP Configurations"
 }
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}
