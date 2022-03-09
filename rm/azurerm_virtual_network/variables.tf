@@ -13,3 +13,8 @@ variable "name" {
 variable "address_space" {
   description = "Virtual Network Address Space"
 }
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}

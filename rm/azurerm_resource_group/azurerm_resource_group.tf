@@ -3,9 +3,7 @@ resource "azurerm_resource_group" "resource_group" {
   name     = var.name
   location = var.location
 
-  tags = {
-    environment = var.name
-  }
+  tags = var.tags
 }
 
 output "resource_group" {

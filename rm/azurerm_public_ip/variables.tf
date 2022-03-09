@@ -16,3 +16,8 @@ variable "sku" {
 variable "allocation_method" {
   description = "Public IP allocation_method"
 }
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}

@@ -5,6 +5,8 @@ resource "azurerm_virtual_network" "virtual_network" {
 
   name          = var.name
   address_space = var.address_space
+
+  tags = var.tags
 }
 
 output "virtual_network" {
