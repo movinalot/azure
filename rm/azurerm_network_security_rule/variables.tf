@@ -24,18 +24,22 @@ variable "protocol" {
 
 variable "source_port_range" {
   description = "Network Security Rule source_port_range"
+  default     = "*"
 }
 
 variable "destination_port_range" {
   description = "Network Security Rule destination_port_range"
+  default     = "*"
 }
 
 variable "source_address_prefix" {
   description = "Network Security Rule source_address_prefix"
+  default     = "*"
 }
 
 variable "destination_address_prefix" {
   description = "Network Security Rule destination_address_prefix"
+  default     = "*"
 }
 
 variable "network_security_group_name" {

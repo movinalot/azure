@@ -4,6 +4,8 @@ resource "azurerm_network_security_group" "network_security_group" {
   location            = var.location
 
   name = var.name
+
+  tags = var.tags
 }
 
 output "network_security_group" {

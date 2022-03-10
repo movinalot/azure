@@ -9,3 +9,8 @@ variable "location" {
 variable "name" {
   description = "Network Security Group Name"
 }
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}
