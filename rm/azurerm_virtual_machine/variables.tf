@@ -42,4 +42,11 @@ variable "identity_identity" {}
 variable "delete_data_disks_on_termination" {}
 variable "delete_os_disk_on_termination" {}
 
-variable "zones" {}
+variable "zones" {
+  default = null
+}
+
+variable "tags" {
+  description = "Tags"
+  default     = null
+}

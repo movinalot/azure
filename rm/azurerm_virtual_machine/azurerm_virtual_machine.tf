@@ -61,6 +61,8 @@ resource "azurerm_virtual_machine" "virtual_machine" {
   }
 
   zones = var.zones
+
+  tags = var.tags
 }
 
 output "virtual_machine" {
