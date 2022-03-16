@@ -8,6 +8,7 @@ resource "azurerm_virtual_network_peering" "virtual_network_peering" {
   allow_virtual_network_access = var.allow_virtual_network_access
   allow_forwarded_traffic      = var.allow_forwarded_traffic
   use_remote_gateways          = var.use_remote_gateways
+  allow_gateway_transit        = var.allow_gateway_transit
 }
 
 output "virtual_network_peering" {

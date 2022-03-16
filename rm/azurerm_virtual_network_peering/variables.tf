@@ -25,3 +25,7 @@ variable "allow_forwarded_traffic" {
 variable "use_remote_gateways" {
   description = "use_remote_gateways"
 }
+
+variable "allow_gateway_transit" {
+  description = "allow_gateway_transit"
+}
