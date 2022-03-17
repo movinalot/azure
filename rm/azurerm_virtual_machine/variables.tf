@@ -25,11 +25,11 @@ variable "storage_os_disk_name" {}
 variable "storage_os_disk_caching" {}
 variable "storage_os_disk_managed_disk_type" {}
 variable "storage_os_disk_create_option" {}
-variable "storage_data_disk_name" {}
-variable "storage_data_disk_managed_disk_type" {}
-variable "storage_data_disk_create_option" {}
-variable "storage_data_disk_lun" {}
-variable "storage_data_disk_disk_size_gb" {}
+
+variable "storage_data_disks" {
+  default = null
+}
+
 variable "os_profile_computer_name" {}
 variable "os_profile_admin_username" {}
 variable "os_profile_admin_password" {}

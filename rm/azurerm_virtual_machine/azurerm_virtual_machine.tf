@@ -41,12 +41,15 @@ resource "azurerm_virtual_machine" "virtual_machine" {
     caching           = var.storage_os_disk_caching
   }
 
-  storage_data_disk {
-    name              = var.storage_data_disk_name
-    managed_disk_type = var.storage_data_disk_managed_disk_type
-    create_option     = var.storage_data_disk_create_option
-    disk_size_gb      = var.storage_data_disk_disk_size_gb
-    lun               = var.storage_data_disk_lun
+  dynamic "storage_data_disk" {
+    for_each = var.storage_data_disks
+    content {
+      name              = storage_data_disk.value.name
+      managed_disk_type = storage_data_disk.value.managed_disk_type
+      create_option     = storage_data_disk.value.create_option
+      disk_size_gb      = storage_data_disk.value.disk_size_gb
+      lun               = storage_data_disk.value.lun
+    }
   }
 
   os_profile {
