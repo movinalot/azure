@@ -1,19 +1,19 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Network Security Group Name"
+  description = "name"
 }
 
 variable "account_replication_type" {
-  description = "Network Security Group account_replication_type"
+  description = "account_replication_type"
 }
 
 variable "account_tier" {
-  description = "Network Security Group account_tier"
+  description = "account_tier"
 }

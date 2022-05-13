@@ -1,28 +1,30 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Availability Set Name"
+  description = "name"
 }
 
 variable "platform_update_domain_count" {
-  description = "Availability Set platform_update_domain_count"
+  description = "platform_update_domain_count"
+  default     = 2
 }
 
 variable "platform_fault_domain_count" {
-  description = "Availability Set platform_fault_domain_count"
-
+  description = "platform_fault_domain_count"
+  default     = 2
 }
 
 variable "proximity_placement_group_id" {
-  description = "Availability Set proximity_placement_group_id"
+  description = "proximity_placement_group_id"
 }
 
 variable "managed" {
-  description = "Availability Set managed"
+  description = "managed"
+  default     = true
 }

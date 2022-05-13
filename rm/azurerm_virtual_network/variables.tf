@@ -1,20 +1,21 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Virtual Network Name"
+  description = "name"
 }
 
 variable "address_space" {
-  description = "Virtual Network Address Space"
+  description = "address_space"
+  default     = []
 }
 
 variable "tags" {
-  description = "Tags"
+  description = "tags"
   default     = null
 }

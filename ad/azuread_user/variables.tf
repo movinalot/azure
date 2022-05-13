@@ -1,23 +1,23 @@
 variable "user_principal_name" {
-  description = ""
+  description = "user_principal_name"
 }
 
 variable "display_name" {
-  description = ""
+  description = "display_name"
 }
 
 variable "mail_nickname" {
-  description = ""
+  description = "mail_nickname"
 }
 
 variable "mail" {
-  description = ""
+  description = "mail"
 }
 
 variable "password" {
-  description = ""
+  description = "password"
 }
 
 variable "account_enabled" {
-  description = ""
+  description = "account_enabled"
 }

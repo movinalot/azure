@@ -1,9 +1,9 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "name" {
-  description = "Network Security Rule name"
+  description = "name"
 }
 
 variable "loadbalancer_id" {

@@ -1,11 +1,11 @@
 variable "name" {
-  description = "Resource Group name"
+  description = "name"
 }
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "tags" {
-  description = "Tags"
+  description = "tags"
   default     = null
 }

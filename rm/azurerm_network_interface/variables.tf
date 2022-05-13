@@ -1,28 +1,28 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Network Interface Name"
+  description = "name"
 }
 
 variable "enable_ip_forwarding" {
-  description = "Virtual Network Interface enable_ip_forwarding"
+  description = "enable_ip_forwarding"
 }
 
 variable "enable_accelerated_networking" {
-  description = "Virtual Network Interface enable_accelerated_networking"
+  description = "enable_accelerated_networking"
 }
 
 variable "ip_configurations" {
-  description = "Virtual Network Interface ip_configurations"
+  description = "ip_configurations"
 }
 
 variable "tags" {
-  description = "Tags"
+  description = "tags"
   default     = null
 }

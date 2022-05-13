@@ -1,20 +1,21 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
+
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Load Balancer Name"
+  description = "name"
 }
 
 variable "sku" {
-  description = "Load Balancer SKU"
+  description = "sku"
 }
 
 variable "frontend_ip_configurations" {
-  description = "Load Balancer Frontend IP Configurations"
+  description = "frontend_ip_configurations"
 }
 
 variable "tags" {

@@ -1,16 +1,16 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Network Security Group Name"
+  description = "name"
 }
 
 variable "tags" {
-  description = "Tags"
+  description = "tags"
   default     = null
 }

@@ -1,7 +1,7 @@
 variable "network_interface_id" {
-  description = "Network Interface ID"
+  description = "network_interface_id"
 }
 
 variable "network_security_group_id" {
-  description = "Security Group ID"
+  description = "network_security_group_id"
 }

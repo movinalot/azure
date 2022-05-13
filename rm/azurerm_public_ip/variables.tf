@@ -1,23 +1,23 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 variable "location" {
-  description = "Resource Group location"
+  description = "location"
 }
 
 variable "name" {
-  description = "Public IP Name"
+  description = "name"
 }
 
 variable "sku" {
-  description = "Public IP SKU"
+  description = "sku"
 }
 
 variable "allocation_method" {
-  description = "Public IP allocation_method"
+  description = "allocation_method"
 }
 
 variable "tags" {
-  description = "Tags"
+  description = "tags"
   default     = null
 }

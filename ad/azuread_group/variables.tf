@@ -1,15 +1,15 @@
 variable "display_name" {
-  description = ""
+  description = "display_name"
 }
 
 variable "owners" {
-  description = ""
+  description = "owners"
 }
 
 variable "security_enabled" {
-  description = ""
+  description = "security_enabled"
 }
 
 variable "assignable_to_role" {
-  description = ""
+  description = "assignable_to_role"
 }

@@ -1,15 +1,16 @@
 variable "resource_group_name" {
-  description = "Resource Group name"
+  description = "resource_group_name"
 }
 
 variable "name" {
-  description = "Subnet Name"
+  description = "name"
 }
 
 variable "vnet_name" {
-  description = "Virtual Network Name"
+  description = "vnet_name"
 }
 
 variable "address_prefixes" {
-  description = "Subnet Address Space"
+  description = "address_prefixes"
+  default     = []
 }
