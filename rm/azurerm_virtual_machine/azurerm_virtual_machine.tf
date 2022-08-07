@@ -6,6 +6,7 @@ resource "azurerm_virtual_machine" "virtual_machine" {
   name = var.name
 
   availability_set_id = var.availability_set_id
+  zones = var.zones
 
   network_interface_ids        = var.network_interface_ids
   primary_network_interface_id = var.primary_network_interface_id
@@ -52,18 +53,16 @@ resource "azurerm_virtual_machine" "virtual_machine" {
     }
   }
 
+  os_profile_linux_config {
+    disable_password_authentication = var.os_profile_linux_config_disable_password_authentication
+  }
+
   os_profile {
     computer_name  = var.os_profile_computer_name
     admin_username = var.os_profile_admin_username
     admin_password = var.os_profile_admin_password
     custom_data    = var.os_profile_custom_data
   }
-
-  os_profile_linux_config {
-    disable_password_authentication = var.os_profile_linux_config_disable_password_authentication
-  }
-
-  zones = var.zones
 
   tags = var.tags
 }
