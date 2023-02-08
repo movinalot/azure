@@ -6,7 +6,7 @@ resource "azurerm_virtual_machine" "virtual_machine" {
   name = var.name
 
   availability_set_id = var.availability_set_id
-  zones = var.zones
+  zones               = var.zones
 
   network_interface_ids        = var.network_interface_ids
   primary_network_interface_id = var.primary_network_interface_id
